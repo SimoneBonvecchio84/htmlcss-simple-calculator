@@ -1,129 +1,123 @@
-
-/* UNI-SEL */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
-button {
-    width: 80px;
+/*container*/
+.container {
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    background-color: hsl(0deg 0% 91.76%);
+    display: block;
+    flex-direction: column;
+}
+/*header*/
+.header {
+    height: 100px;
+    text-align: center;
    
 }
-/* CONTAINER */
-.container {
-    margin: 90px auto ;
-    border: 1px solid hsl(0deg 0% 85.88%);
-    width: 300px;
-    border-radius: 8px;
-    background-color:hsl(0deg 0% 92.55%) ;
-    
-}
- /*LOGO*/
-.logo-header {
-    height: 100px;
-    
-}
-/*DISPLAY*/
+/*display*/
 .display {
-   width: 100%;
-   height: 100px;
-   background-color: black;
-   display: flex;
-   justify-content: end;
-   align-items: center;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
-/*TEXT-DISPLAY*/
-.text-display {
+/*display-text*/
+.display-text {
     font-family:seven segment;font-style:normal;
     font-weight:400;src:local('Seven Segment'),url('https://fonts.cdnfonts.com/s/71640/Seven Segment.woff') format('woff');
     color:hsl(164deg 92.42% 41.37%) ;
-    font-size: 50px;
+    font-size: 40px;
     margin-right: 10px;
 }
-/*BUTTON-CONTAINER*/
-.button-container {
+/*container-button*/
+.container-button {
     display: flex;
-    margin-top: 20px;
-    margin-left: 15px;
+    flex-direction: row;
 }
-/*BUTTON-NUMBER-CONT*/
-.button-number-cont {
+/*container-button-left*/
+.container-button-left {
     width: 50px;
-    flex-grow: 2;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    
-    
-}
-/*BUTTON-OPERATORS*/
-.button-operators-container{
-    flex-grow: 0.5; 
+    height: 300px;
+    flex-grow: 5;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 70px; */
-}
-/*OPOERETO-BUTTON*/
-.operators-button{
-    padding: 3px;
-}
-/*NUMBERS-BUTTON*/
-.numbers-button {
-    width: calc(100% / 3);
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/*NUMBERS-BUTTON*/
-.numbers-button button {
-    border-radius: 3px;
-    box-shadow: 6px;
-    font-size: 40px;
-    width: 50px;
-    background-color: hsl(0deg 0% 73.33%);
+    
     
 }
-
-.button-operators-container button {
-    border-radius: 3px;
-    box-shadow: 6px;
-    font-size: 40px;
-    width:50px;
-    border-radius: 3px;
-    box-shadow: 6px;
+/*container-button-rigth */
+.container-button-rigth {
+    width: 50px;
+    height: 300px;
    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*button-number-top*/
+.button-number-top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/*button-number-bot*/
+.button-number-bot {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+/*button-cont*/
+.button-cont {
+   margin-top: 7px;
+   width: calc(100% / 3);
+   text-align: center;
+   line-height: 50px;
 }
 
-button.orange-button {
+button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+/*button-zero*/
+.button-zero {
+   flex-grow: 2;
+
+}
+/*zero*/
+.zero {
+    width: 132px;
+    margin-left: 12px;
+}
+/*same*/
+.same {
+    margin-right: 10px ;
+    background-color:hsl(36.49deg 100% 51.96%) ;
+}
+/*button-operator*/
+.button-operator {
+    margin-top: 5px;
+}
+
+button.orange {
     background-color:hsl(36.49deg 100% 51.96%) ;
 }
 
-button.blue-button {
-    background-color:hsl(188.42deg 26.51% 57.84%) ;
+button.blue {
+    background-color:hsl(188.42deg 26.51% 57.84%);
 }
-#zero {
-    width: 120px;
-}
-#zero > button {
-    width: 120px;
-}
-
-#the-same {
-    margin-left: 7px;
-}
-#the-same > button {
-    background-color:hsl(36.49deg 100% 51.96%) ;
-}
-
-
-
 
 
 
