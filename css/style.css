@@ -47,14 +47,36 @@
 
 .button-number-cont {
     width: 50px;
-    height: 50px;
-    background-color: brown;
     flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap
 }
 
 .button-operators{
     background-color: blue;
     flex-grow: 1; 
+    display: flex;
+}
+
+.numbers-button {
+    /* border: 1px solid black; */
+   
+    height: 70px;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.numbers-button button {
+    border-radius: 3px;
+    box-shadow: 6px;
+    font-size: 40px;
+    width: 70%;
+    background-color: hsl(0deg 0% 73.33%);
+    
 }
 
 
