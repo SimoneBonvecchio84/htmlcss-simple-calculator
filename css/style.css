@@ -12,6 +12,8 @@
     background-color: hsl(0deg 0% 91.76%);
     display: block;
     flex-direction: column;
+    box-shadow:5px 5px 5px black ;
+    
 }
 /*header*/
 .header {
@@ -90,6 +92,7 @@ button {
     height: 50px;
     font-size: 20px;
     border-radius: 5px;
+    box-shadow:5px 5px 5px black ;
 }
 /*button-zero*/
 .button-zero {
