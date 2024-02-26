@@ -3,130 +3,110 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*container*/
+
 .container {
     margin: 100px auto;
     border: 1px solid black;
     border-radius: 5px;
     width: 300px;
     background-image: linear-gradient(to right, grey 30%, lightgrey );
-    /* background-color: hsl(0deg 0% 91.76%); */
-    display: block;
-    flex-direction: column;
-    box-shadow:5px 5px 5px black ;
+    box-shadow: 10px 10px 10px;
     
 }
-/*header*/
+
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
 .header {
     height: 100px;
     text-align: center;
    
 }
-/*display*/
-.display {
-    /* height: 100px; */
-    background-color: black;
-    /* display: flex;
-    justify-content: end;
-    align-items: center; */
 
+.display {
+   background-color: black;
 }
-/*display-text*/
+
 .display-text {
     font-family:seven segment;font-style:normal;
     font-weight:400;src:local('Seven Segment'),url('https://fonts.cdnfonts.com/s/71640/Seven Segment.woff') format('woff');
     color:hsl(164deg 92.42% 41.37%) ;
     font-size: 40px;
-    margin-right: 10px;
     padding: 20px;
+    margin-left: 45px;
 }
-/*container-button*/
+
 .container-button {
-    display: flex;
-    flex-direction: row;
+    margin: 10px;
 }
-/*container-button-left*/
+
 .container-button-left {
-    width: 50px;
-    height: 300px;
-    flex-grow: 5;
-    display: flex;
-    flex-direction: column;
+    
+    width: 80%;
+    gap: 15px;
+}
+
+.button-number {
+    width: calc(100% / 3 - 10px);
+    padding: 15px;
+    border-radius: 5px;
+    background-color:rgb(187 187 187) ;
     
     
 }
-/*container-button-rigth */
-.container-button-rigth {
-    width: 50px;
-    height: 300px;
+
+.zero {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-/*button-number-top*/
-.button-number-top {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
+
+.same {
+    background-color:rgb(255 159 10) ;
+    color: white;
+}
+
+.container-button-rigth {
+    width: 20%;
+    justify-content: center;
+    gap: 15px;
+    
     
 }
-/*button-number-bot*/
-.button-number-bot {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
+
+.button-operator {
+    width: 80px;
+    margin-left: 15px;
+    color: white;
+    border-radius: 5px;
     
 }
-/*button-cont*/
-.button-cont {
-   margin-top: 7px;
-   width: calc(100% / 3);
-   text-align: center;
-   line-height: 50px;
+
+.blue-operator {
+    background-color:rgb(119 168 176) ;
+}
+
+.button-number:hover,
+.button-operator:hover {
+   background-color: lightgrey;
 }
 
 button {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 5px;
-    box-shadow:5px 5px 5px black ;
-}
-/*button-zero*/
-.button-zero {
-   flex-grow: 2;
-
-}
-/*zero*/
-.zero {
-    width: 132px;
-    margin-left: 12px;
-}
-/*same*/
-.same {
-    margin-right: 10px ;
-    background-color:hsl(36.49deg 100% 51.96%) ;
-}
-/*button-operator*/
-.button-operator {
-    margin-top: 5px;
-   
+    box-shadow: 5px 5px 5px black;
 }
 
-button.orange {
-    background-color:hsl(36.49deg 100% 51.96%) ;
-}
 
-button.blue {
-    background-color:hsl(188.42deg 26.51% 57.84%);
-}
- button:hover {
-    background-color: grey;
- }
+
+
+
+
+
+ 
+
+
+
+
 
 
 
